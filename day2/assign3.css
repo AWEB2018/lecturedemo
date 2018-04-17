@@ -38,7 +38,7 @@
 
 
 .div2Inner {
-    background: #FFC107;
+    background: rgb(116, 104, 69);
     height: 100px;
     margin-left: 24%;
     margin-right: 24%;
@@ -51,6 +51,11 @@
     border-left-width:20px;
     border-left-color:gray;
     border-left-style:solid;
+}
+
+.divImgBackground {
+    background: url("img2.jpg");
+    background-size: 100% 100%;
 }
 
 

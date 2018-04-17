@@ -18,6 +18,10 @@
     >> CSS RULES 
         >> PSEUDO CLASSES
 
+    >> Working with position css RULES
+    >> Working with LinearGraident
+    >> working with background image.
+
 ## DAY1 ##
 >> INSTALL NODEJS
 >> node -v
