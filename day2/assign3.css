@@ -1,0 +1,57 @@
+.div1TopFixed {
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.div1{
+    height: 10%;
+    background: blueviolet;
+    color:white;
+}
+
+.div2{
+    height: 80%;
+}
+
+.div3{
+    height: 10%;
+    background: rgb(123, 123, 187);
+    color : white;
+}
+
+.div3BottomFixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.div1Inner {
+    width: 24.5%;
+    background: blueviolet;
+    border-right: 5px solid #cddc39;
+    float: left;
+    height: 100%;
+    color: white;
+}
+
+
+.div2Inner {
+    background: #FFC107;
+    height: 100px;
+    margin-left: 24%;
+    margin-right: 24%;
+    margin-top: 3px;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+
+    border-left-width:20px;
+    border-left-color:gray;
+    border-left-style:solid;
+}
+
+
+
