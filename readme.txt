@@ -1,3 +1,24 @@
+## DAY2 ##
+    >> ./node_modules/.bin/lite-server .
+    
+    >> JAVASCRIPT
+        >> document object
+        >> document.getElementById();
+
+    >> CSS RULES
+        >> ELEMENT SELECTOR
+        >> ID SELECTOR
+        >> CLASS SELECTOR
+        >> GROUP SELECTOR
+    >> CSS RULES ADV
+        >> DESCENDENT SELECTOR
+        >> CHILD SELECTOR
+        >> ADJACENT SIBLING SELECTOR
+        >> GENERAL SIBLINE SELECTOR 
+    >> CSS RULES 
+        >> PSEUDO CLASSES
+
+## DAY1 ##
 >> INSTALL NODEJS
 >> node -v
 >> npm -v

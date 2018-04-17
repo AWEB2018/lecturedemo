@@ -1,0 +1,21 @@
+/*ELEMENT SELECTOR */
+#id1 {
+    color:white;
+    background: blue;
+    border : 1px solid red;
+}
+
+div {
+    color:white;
+    background: green;
+    border: 1px solid black;
+}
+
+p {
+    border: 1px solid green;
+    background: yellow;
+    color: blue;
+    padding: 5px;
+}
+
+
