@@ -1,13 +1,15 @@
 <html>
     <head>
         <link rel="stylesheet" href="assign2.css">
+        <link href="../node_modules/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
         <script src="assign2.js"></script>
     </head>
 
     <body>
         <div id="div1" class="div1 div1TopFixed">
             <div onclick="createDyanmicElement()" class="divHover" style="float:left;width:25%;height: 100%;" >
-                CREAET NEW BLOCK
+                CREAET NEW BLOCK  <span class="oi oi-cloud" title="cloud"  aria-hidden="true"></span>
             </div>
             <div onclick="createDyanmicElementGradient()" style="float:left;width:25%;height: 100%;background: green;">
                 CREATE GRADIENT BLOCK
@@ -18,11 +20,10 @@
 
         <!--NOTIFICTION-->
         <div id="toast" style="display:none; position:fixed; padding:5px;top:0; right:0;width:250px; height: 25px; background: yellow;">
-            Block added successfully.
+            Block added successfully. 
         </div>
 
         <div id="div2" class="div2" style="margin-top:6%; overflow-y: scroll;">
-            
         </div>
 
 

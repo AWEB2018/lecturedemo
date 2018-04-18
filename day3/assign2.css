@@ -60,11 +60,6 @@
 }
 
 
-
-span:hover{
-    color:red;
-}
-
 .divHover:hover{
     background: rgb(170, 224, 83);
 }
