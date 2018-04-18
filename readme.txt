@@ -1,3 +1,9 @@
+## DAY3 ##
+    >> Overflow-y
+    >> float left
+    >> pseudo class selctor :: 
+        div:hover {}
+
 ## DAY2 ##
     >> ./node_modules/.bin/lite-server .
     
