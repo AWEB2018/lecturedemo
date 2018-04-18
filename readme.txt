@@ -3,6 +3,11 @@
     >> float left
     >> pseudo class selctor :: 
         div:hover {}
+    >> crate first javascript file.
+    >> link javascript to html file.
+    >> bind event to call javascript method.
+    >> create dynamic ELEMENT && append to one parent division.
+    >> Create notification. on successful element creation.
 
 ## DAY2 ##
     >> ./node_modules/.bin/lite-server .
