@@ -3,6 +3,7 @@
     >> float left
     >> pseudo class selctor :: 
         div:hover {}
+    >> display:none; display:block;
     >> crate first javascript file.
     >> link javascript to html file.
     >> bind event to call javascript method.
