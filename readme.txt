@@ -3,6 +3,10 @@
     >> SECOND ASSIGNMENT :: DYNMAIC POST + DYNAMIC BACKGROUND
     >> THIRD ASSIGNMENT :: Capitalize your input text 
 
+    >> BOOTSTRAP SETUP :: INSTALL BOOTSTRAP
+    >> INCLUDE BOOTSTARAP FILE IN html
+    >> VERIFY successful inclusion ********
+
 ## DAY3 ##
     >> Overflow-y
     >> float left
