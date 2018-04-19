@@ -1,3 +1,7 @@
+## DAY4 ##
+    >> FIRST ASSIGNMENT :: CREATE DYNAMIC POST
+    >> SECOND ASSIGNMENT :: DYNMAIC POST + DYNAMIC BACKGROUND
+
 ## DAY3 ##
     >> Overflow-y
     >> float left

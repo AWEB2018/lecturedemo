@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assign1.css">
+
+        <script src="assign1.js"></script>
+    </head>
+
+    <body>
+        <div id="div1" class="div1 div1TopFixed">
+            <div class="make-center" style="float:left;width:25%;height: 100%;" >
+                DACBOOK
+            </div>
+            <div class="make-center" style="float:left;width:75%;height: 100%;background: green;">
+                <input  type="text" id="post" class="my-input">
+                <input onclick="createPost();" type="button" class="my-button" value="POST">
+            </div>
+        </div>
+
+        <!--NOTIFICTION-->
+        <div id="toast" style="display:none; position:fixed; padding:5px;top:0; right:0;width:250px; height: 25px; background: yellow;">
+            Block added successfully. 
+        </div>
+
+        <!-- WALL POST -->
+        <div id="div2" class="div2" style="margin-top:6%; overflow-y: scroll;">
+        </div>
+
+    </body>
+</html>
