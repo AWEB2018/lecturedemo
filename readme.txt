@@ -1,6 +1,7 @@
 ## DAY4 ##
     >> FIRST ASSIGNMENT :: CREATE DYNAMIC POST
     >> SECOND ASSIGNMENT :: DYNMAIC POST + DYNAMIC BACKGROUND
+    >> THIRD ASSIGNMENT :: Capitalize your input text 
 
 ## DAY3 ##
     >> Overflow-y
