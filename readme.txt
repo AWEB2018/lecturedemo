@@ -6,6 +6,8 @@
     >> BOOTSTRAP SETUP :: INSTALL BOOTSTRAP
     >> INCLUDE BOOTSTARAP FILE IN html
     >> VERIFY successful inclusion ********
+    >> Layout using Bootstrap
+    >> Nested Layout using bootstarp.
 
 ## DAY3 ##
     >> Overflow-y
