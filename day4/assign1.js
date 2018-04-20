@@ -7,7 +7,7 @@ function createPost() {
 
         var childElement = document.createElement("div");
         childElement.className = "div2Inner make-center";
-        childElement.innerHTML =   postValue;
+        childElement.innerHTML =   postValue || "I AM NOT FAKE!!! " + new Date();
 
         childElement.style.background = "linear-gradient(to top right, #FF9800, green)";
 
@@ -29,5 +29,6 @@ function handleNotification() {
 
     setTimeout(function(){
         toast.style.display = "none";
+        createPost();
     }, 2000);
 }
