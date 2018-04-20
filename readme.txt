@@ -1,4 +1,5 @@
 ## DAY5 ##
+    >> Usage of Icons.
     >> ASSIGNMENT-1 :: recursion using setTimeout();
     >> ASSIGNMENT-2 :: BOOTSTRAP + LIKE,DISLIKE using ID
     >> ASSIGNMENT-3 :: BOOTSTRAP + LIKE,DISLIKE using this.
