@@ -46,3 +46,24 @@ function dislikeCount() {
         console.log(err);
     }
 }
+
+
+function fileSelected(fileRef){
+    try{
+        if (fileRef.files && fileRef.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                var tempImgRef = document.getElementById("tempImgId");
+                tempImgRef.setAttribute("src", e.target.result);
+                tempImgRef.style.height = "300px";
+                tempImgRef.style.width = "50%";
+
+            };
+
+            reader.readAsDataURL(fileRef.files[0]);
+        }
+    }catch(err){
+        console.log(err);
+    }
+};
