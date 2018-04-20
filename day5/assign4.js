@@ -57,7 +57,7 @@ function fileSelected(fileRef){
                 let imgBlockRef = document.getElementById("refBlockImgId");
                 
                 let imgCloneRef = imgBlockRef.cloneNode(true);
-                imgBlockRef.removeAttribute("id");
+                imgCloneRef.removeAttribute("id");
                 imgCloneRef.style.display = 'block';
 
                 var tempImgRef = imgCloneRef.children[0].children[0].children[0];
