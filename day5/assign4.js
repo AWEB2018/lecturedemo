@@ -50,15 +50,22 @@ function dislikeCount() {
 
 function fileSelected(fileRef){
     try{
-        if (fileRef.files && fileRef.files[0]) {
+        if(fileRef.files && fileRef.files[0]) {
             var reader = new FileReader();
 
             reader.onload = function (e) {
-                var tempImgRef = document.getElementById("tempImgId");
-                tempImgRef.setAttribute("src", e.target.result);
-                tempImgRef.style.height = "300px";
-                tempImgRef.style.width = "50%";
+                let imgBlockRef = document.getElementById("refBlockImgId");
+                
+                let imgCloneRef = imgBlockRef.cloneNode(true);
+                imgBlockRef.removeAttribute("id");
+                imgCloneRef.style.display = 'block';
 
+                var tempImgRef = imgCloneRef.children[0].children[0].children[0];
+                tempImgRef.src = e.target.result;
+                tempImgRef.style.height = "100%";
+
+                let parentRef = document.getElementById("parentRefId");
+                parentRef.insertBefore(imgCloneRef, parentRef.firstChild);
             };
 
             reader.readAsDataURL(fileRef.files[0]);
