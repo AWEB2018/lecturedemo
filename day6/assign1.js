@@ -1,15 +1,25 @@
 
 function createNewBlock(){
     try{
+        // get the value from box
+        let inputPostRef = document.getElementById("post");
+        let postValue = inputPostRef.value; 
+
+        // REFERENCE BLOCK
         let refBlock = document.getElementById("refBlockId");
 
         let cloneRefBlock = refBlock.cloneNode(true);
         cloneRefBlock.style.display = "block";
         cloneRefBlock.removeAttribute("id");
 
+        // SET DYNAMIC VLAUE
+        cloneRefBlock.children[0].children[0].innerHTML = postValue;
+
         let parentRef = document.getElementById("parentRefId");
         parentRef.insertBefore(cloneRefBlock, parentRef.firstChild);
 
+        // CLEAR THE TEXT
+        inputPostRef.value = "";
     }catch(mukeshErr){
         console.log(mukeshErr);
     }

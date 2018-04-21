@@ -1,3 +1,11 @@
+## DAY6 ##
+    >> DYNAMIC POST ON WALL USING INPUT BOX
+    >> INTEGRATE ENTER KEYBOARD EVENT 
+        >> IDENTIFY KEYBOARD EVENT.
+        >> WRITE JAVASSCRIPT METHOD TO CAPUTRE THE EVENT.
+        >> CHECKOUT THE KEYCODE OF KEYBOARD.
+        >> IF KEYCODE IS 'ENTER' call the method createNewBlock;
+
 ## DAY5 ##
     >> Usage of Icons.
     >> ASSIGNMENT-1 :: recursion using setTimeout();
