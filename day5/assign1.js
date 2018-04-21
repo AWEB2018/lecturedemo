@@ -3,11 +3,12 @@ function likeCount() {
     try{
         var likeRef = document.getElementById('like');
         
+        // READING THE VALUE
         var likeCountStr = likeRef.innerHTML;
         var likeCount  = parseInt(likeCountStr);
         likeCount += 1;
 
-        // REVERSE
+        // WRITING THE UPDATED VALUE
         likeRef.innerHTML = " " + likeCount;
 
     }catch(mukeshErr){

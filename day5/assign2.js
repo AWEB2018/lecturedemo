@@ -1,7 +1,6 @@
 
 function likeCount(btnElemRef) {
     try{
-        console.log(btnElemRef);
         let firstChild = btnElemRef.children[0];
 
         let likeCountStr = firstChild.innerHTML;
@@ -10,7 +9,6 @@ function likeCount(btnElemRef) {
         likeCount += 1;
 
         firstChild.innerHTML = " " + likeCount;
-
     }catch(mukeshErr){
         console.log(mukeshErr);
     }
