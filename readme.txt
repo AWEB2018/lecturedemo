@@ -5,6 +5,18 @@
         >> WRITE JAVASSCRIPT METHOD TO CAPUTRE THE EVENT.
         >> CHECKOUT THE KEYCODE OF KEYBOARD.
         >> IF KEYCODE IS 'ENTER' call the method createNewBlock;
+    >> WORKING WITH IMAGES
+        >> IMG ELEMENT :: SRC ATTRIBUTE
+        >> ASPECT RATION :: WIDTH/HEIGHT
+
+        >> INPUT TYPE :: FILE
+        >> IDENTIFY EVENT :: ONCHANGE.
+        >> CREAT METHOD :: postImage(); for logic.
+        >> PASS current working object as parameter; in ochange event. 
+        >> ".files" attribute on current file object.
+        >> importance of multiple keyword
+        >> onload method
+    >> CHANGE THE STATIC IMAGE
 
 ## DAY5 ##
     >> Usage of Icons.
