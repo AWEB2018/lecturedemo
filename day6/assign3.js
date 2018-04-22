@@ -83,3 +83,27 @@ function postImage(fileRef) {
         console.log(err);
     }
 }
+
+function postImageOption2(fileRef) {
+    try{
+        let currentFile = fileRef.files[0];
+        let imgRefElem = document.getElementById("imgid");
+            
+        // QUERY REF BLOCK
+        let imgRefBlock = document.getElementById("refBlockImgId");
+
+        // MAKE CLONE
+        let cloneImgBlock = imgRefBlock.cloneNode(true);
+        cloneImgBlock.style.display = "block";
+        cloneImgBlock.removeAttribute("id");
+
+        let imgElem = cloneImgBlock.children[0].children[0].children[0];
+        imgElem.src = URL.createObjectURL(currentFile);
+
+        // APPEND TO PARENT
+        let parentRef = document.getElementById("parentRefId");
+        parentRef.insertBefore(cloneImgBlock, parentRef.firstChild);
+    }catch(err){
+        console.log(err);
+    }
+}

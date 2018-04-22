@@ -68,3 +68,16 @@ function postImage(fileRef) {
         console.log(err);
     }
 }
+
+function postImageOption2(fileRef) {
+    try{
+        let currentFile = fileRef.files[0];
+        
+        let fileUrl = URL.createObjectURL(currentFile);
+
+        let imgRefElem = document.getElementById("imgid");
+        imgRefElem.src = fileUrl;
+    }catch(err){
+        console.log(err);
+    }
+}
