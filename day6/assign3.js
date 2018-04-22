@@ -58,9 +58,6 @@ function postImage(fileRef) {
 
         // this will be called on succesful reading of image file data.
         fr.onload = function(e){
-            // e.target.result
-            let imgRefElem = document.getElementById("imgid");
-            
             // QUERY REF BLOCK
             let imgRefBlock = document.getElementById("refBlockImgId");
 
@@ -87,7 +84,6 @@ function postImage(fileRef) {
 function postImageOption2(fileRef) {
     try{
         let currentFile = fileRef.files[0];
-        let imgRefElem = document.getElementById("imgid");
             
         // QUERY REF BLOCK
         let imgRefBlock = document.getElementById("refBlockImgId");
@@ -103,6 +99,29 @@ function postImageOption2(fileRef) {
         // APPEND TO PARENT
         let parentRef = document.getElementById("parentRefId");
         parentRef.insertBefore(cloneImgBlock, parentRef.firstChild);
+    }catch(err){
+        console.log(err);
+    }
+}
+
+function postVideo(fileRef) {
+    try{
+        let currentFile = fileRef.files[0];
+            
+        // QUERY REF BLOCK
+        let videoRefBlock = document.getElementById("refBlockVideoId");
+
+        // MAKE CLONE
+        let cloneBlock = videoRefBlock.cloneNode(true);
+        cloneBlock.style.display = "block";
+        cloneBlock.removeAttribute("id");
+
+        let videoElem = cloneBlock.children[0].children[0].children[0];
+        videoElem.src = URL.createObjectURL(currentFile);
+
+        // APPEND TO PARENT
+        let parentRef = document.getElementById("parentRefId");
+        parentRef.insertBefore(cloneBlock, parentRef.firstChild);
     }catch(err){
         console.log(err);
     }
