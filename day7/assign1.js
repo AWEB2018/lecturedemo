@@ -5,6 +5,10 @@ function createNewBlock(){
         let inputPostRef = document.getElementById("post");
         let postValue = inputPostRef.value; 
 
+        if(postValue == ""){
+            throw new Error("Text can'nt be empty.");
+        }
+
         // REFERENCE BLOCK
         let refBlock = document.getElementById("refBlockId");
 

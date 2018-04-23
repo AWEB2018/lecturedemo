@@ -24,13 +24,18 @@
                 </div>
                 
                 <!-- IMAGE -->
-                <div class="col-sm-2 make-center">
-                        <input  onchange="postImageOption2(this);" accept="image/*" multiple type="file" class="form-control-file" >
+                <div class="col-sm-2  make-center mt-2">
+                    <label style="cursor: pointer;" class="bg-info text-white form-control form-control-lg">Upload Image
+                        <input style="display: none;"  onchange="postImageOption2(this);" accept="image/*" multiple type="file" class="form-control-file" >
+                    </label>     
                 </div>
 
                 <!-- VIDEO -->
-                <div class="col-sm-2 make-center">
-                    <input  onchange="postVideo(this);" accept="video/*"  type="file" class="form-control-file" >
+                <div class="col-sm-2 make-center mt-2">
+                    <label style="cursor: pointer;" class="bg-warning text-white form-control form-control-lg">
+                        Upload Video
+                        <input style="display: none;"  onchange="postVideo(this);" accept="video/*"  type="file" class="form-control-file" >
+                    </label>
                 </div>
                 
             </div>

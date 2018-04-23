@@ -1,3 +1,13 @@
+## DAY7 ##
+    >> multiple
+    >> accept
+    >> img :: src :: alt
+    >> video :: src :: controls :: autoplay
+    
+    >> Integrate Video.
+    >> Style the Input type File
+    >> Validate the empty text. (Toast Notification; Border Red)
+
 ## DAY6 ##
     >> DYNAMIC POST ON WALL USING INPUT BOX
     >> INTEGRATE ENTER KEYBOARD EVENT 
