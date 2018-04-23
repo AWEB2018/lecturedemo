@@ -7,6 +7,7 @@
     >> Integrate Video.
     >> Style the Input type File
     >> Validate the empty text. (Toast Notification; Border Red)
+    >> Single Button; for both image and video upload
 
 ## DAY6 ##
     >> DYNAMIC POST ON WALL USING INPUT BOX
