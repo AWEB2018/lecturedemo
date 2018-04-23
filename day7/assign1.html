@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assign1.css">
+
+        <!-- ICON CSS-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+        <script src="./assign1.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row bg-primary" style="height: 60px">
+                <div class="col-sm-2 text-white make-center"> DACBOOK</div>
+                <div class="col-sm-4 make-center">
+                    <input id="post" class="form-control form-control-lg" type="text" placeholder="Writer Something Here...">
+                </div>
+                <div class="col-sm-2 make-center">
+                    <button onclick="createNewBlock()" type="button" class="btn btn-lg btn-warning text-white">
+                        POST ON WALL
+                    </button>
+                </div>
+                
+                <!-- IMAGE -->
+                <div class="col-sm-2 make-center">
+                        <input  onchange="postImageOption2(this);" accept="image/*" multiple type="file" class="form-control-file" >
+                </div>
+
+                <!-- VIDEO -->
+                <div class="col-sm-2 make-center">
+                    <input  onchange="postVideo(this);" accept="video/*"  type="file" class="form-control-file" >
+                </div>
+                
+            </div>
+
+
+            <!-- SEOCND ROW-->
+            <div class="row">
+                <div class="col-sm-3"></div>
+                
+                <!-- NESTED PARENT BLOCK-->
+                <div id="parentRefId" class="col-sm-6 ">
+                        
+                </div>
+
+                <div class="col-sm-3"></div>
+            </div>
+
+
+        </div>
+
+
+        <!--REF BLOCK TEXT-->
+        <div id="refBlockId" class="mt-1" style="display:none">
+            <div class="row bg-info" style="height: 150px">
+                    <div class="col-sm-12 make-center text-white">
+                        Hello World!!
+                    </div>
+            </div>
+            <div class="row">
+                <button onclick="likeCount(this);" type="button" class="btn col-sm-6  btn-primary">
+                    <i  class="fa fa-thumbs-up"> 0</i>
+                </button>
+                <button onclick="dislikeCount(this);" type="button" class="btn col-sm-6  btn-secondary">
+                    <i  class="fa fa-thumbs-down "> 0</i>	
+                </button>
+            </div>
+        </div>
+
+
+        <!-- REFERENCE BLOCK FOR IMAGE-->
+        <div id="refBlockImgId" class="mt-1" style="display:none">
+                <div class="row bg-info" style="height: 300px">
+                    <div class="col-sm-12 make-center text-white">
+                        <img src="./hacked.jpg" style="height: 300px;" class="img-fluid rounded" alt="Image not available">
+                    </div>
+                </div>
+                <div class="row">
+                    <button onclick="likeCount(this);" type="button" class="btn col-sm-6  btn-primary">
+                        <i  class="fa fa-thumbs-up"> 0</i>
+                    </button>
+                    <button onclick="dislikeCount(this);" type="button" class="btn col-sm-6  btn-secondary">
+                        <i  class="fa fa-thumbs-down "> 0</i>	
+                    </button>
+                </div>
+        </div>
+
+
+        <!-- REFERENCE BLOCK FOR VIDEO-->
+        <div id="refBlockVideoId" class="mt-1" style="display:none">
+                <div class="row bg-info" style="height: 300px">
+                    <div class="col-sm-12 make-center text-white">
+                        <video src="" style="height: 300px;" controls autoplay></video>
+                    </div>
+                </div>
+                <div class="row">
+                    <button onclick="likeCount(this);" type="button" class="btn col-sm-6  btn-primary">
+                        <i  class="fa fa-thumbs-up"> 0</i>
+                    </button>
+                    <button onclick="dislikeCount(this);" type="button" class="btn col-sm-6  btn-secondary">
+                        <i  class="fa fa-thumbs-down "> 0</i>	
+                    </button>
+                </div>
+        </div>
+
+    </body>
+</html>
