@@ -104,25 +104,3 @@ function postImageOption2(fileRef) {
     }
 }
 
-function postVideo(fileRef) {
-    try{
-        let currentFile = fileRef.files[0];
-            
-        // QUERY REF BLOCK
-        let videoRefBlock = document.getElementById("refBlockVideoId");
-
-        // MAKE CLONE
-        let cloneBlock = videoRefBlock.cloneNode(true);
-        cloneBlock.style.display = "block";
-        cloneBlock.removeAttribute("id");
-
-        let videoElem = cloneBlock.children[0].children[0].children[0];
-        videoElem.src = URL.createObjectURL(currentFile);
-
-        // APPEND TO PARENT
-        let parentRef = document.getElementById("parentRefId");
-        parentRef.insertBefore(cloneBlock, parentRef.firstChild);
-    }catch(err){
-        console.log(err);
-    }
-}

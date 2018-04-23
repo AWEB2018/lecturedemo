@@ -14,7 +14,7 @@
         <div class="container-fluid">
             <div class="row bg-primary" style="height: 60px">
                 <div class="col-sm-2 text-white make-center"> DACBOOK</div>
-                <div class="col-sm-4 make-center">
+                <div class="col-sm-6 make-center">
                     <input id="post" class="form-control form-control-lg" type="text" placeholder="Writer Something Here...">
                 </div>
                 <div class="col-sm-2 make-center">
@@ -23,12 +23,9 @@
                     </button>
                 </div>
                 <div class="col-sm-2 make-center">
-                    <input onchange="postImageOption2(this);" accept="image/*" multiple type="file" class="form-control-file" >
+                        <input  onchange="postImageOption2(this);" accept="image/*" multiple type="file" class="form-control-file" >
                 </div>
-
-                <div class="col-sm-2 make-center">
-                    <input onchange="postVideo(this);" accept="video/*" type="file" class="form-control-file" >
-                </div>
+                
             </div>
 
 
@@ -83,20 +80,5 @@
                 </div>
         </div>
 
-        <div id="refBlockVideoId" class="mt-1" style="display:none">
-            <div class="row bg-info" style="height: 300px">
-                <div class="col-sm-12 make-center text-white">
-                    <video style="height: 300px;" controls autoplay></video>
-                </div>
-            </div>
-            <div class="row">
-                <button onclick="likeCount(this);" type="button" class="btn col-sm-6  btn-primary">
-                    <i  class="fa fa-thumbs-up"> 0</i>
-                </button>
-                <button onclick="dislikeCount(this);" type="button" class="btn col-sm-6  btn-secondary">
-                    <i  class="fa fa-thumbs-down "> 0</i>	
-                </button>
-            </div>
-        </div>
     </body>
 </html>

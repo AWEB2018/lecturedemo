@@ -56,13 +56,14 @@ function postImage(fileRef) {
         let currentFile = fileRef.files[0];
         let fr = new FileReader();
 
-        // this will be called on succesful reading of image file data.
+        // LISTENER :: t.run();
         fr.onload = function(e){
             // e.target.result
             let imgRefElem = document.getElementById("imgid");
             imgRefElem.src = e.target.result;
         }
 
+        // TRIGGER :: EVENT_GENERATOR :: t.start()
         fr.readAsDataURL(currentFile);
     }catch(err){
         console.log(err);
