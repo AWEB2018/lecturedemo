@@ -21,9 +21,9 @@ div.ref:hover .cus-overlay{
 }
 
 div.tref{
-    opacity: .8;
+    opacity: 1;
     transition: 2s ease;
 }
 div.tref:hover{
-    opacity: 1;
+    filter: brightness(85%);
 }
