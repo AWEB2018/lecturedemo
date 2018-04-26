@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assign1.css">
+
+        <!-- ICON CSS-->
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        
+        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css">
+        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-regular.css">
+        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css">
+        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css">
+
+        <script src="../node_modules/holderjs/holder.js"></script>
+        <script src="./assign1.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row bg-primary" style="height: 60px">
+                <div class="col-sm-2 text-white make-center"> 
+                    <img class="rounded"  src="holder.js/150x50?theme=social&text=DACBOOK" alt="">  
+                </div>
+                <div class="col-sm-4 make-center">
+                    <input id="post" class="form-control form-control-lg" type="text" placeholder="Writer Something Here...">
+                </div>
+                <div class="col-sm-2 make-center">
+                    <button onclick="createNewBlock()" type="button" class="btn btn-lg btn-warning text-white">
+                        POST ON WALL
+                    </button>
+                </div>
+                
+                <!-- IMAGE -->
+                <div class="col-sm-2  make-center mt-2">
+                    <label style="cursor: pointer;" class="bg-info text-white form-control form-control-lg">Upload Image
+                        <input style="display: none;"  onchange="postImageOption2(this);" accept="image/*" multiple type="file" class="form-control-file" >
+                    </label>     
+                </div>
+
+                <!-- VIDEO -->
+                <div class="col-sm-2 make-center mt-2">
+                    <label style="cursor: pointer;" class="bg-warning text-white form-control form-control-lg">
+                        Upload Video
+                        <input style="display: none;"  onchange="postVideo(this);" accept="video/*"  type="file" class="form-control-file" >
+                    </label>
+                </div>
+                
+            </div>
+
+
+            <!-- SEOCND ROW-->
+            <div class="row">
+                <div class="col-sm-3"></div>
+                
+                <!-- NESTED PARENT BLOCK-->
+                <div id="parentRefId" class="col-sm-6 ">
+                        
+                </div>
+
+                <div class="col-sm-3"></div>
+            </div>
+
+
+        </div>
+
+
+        <!--REF BLOCK TEXT-->
+        <div id="refBlockId" class="mt-1 ref" style="display:none; position: relative;">
+            <div class="row tref bg-info " style="height: 150px">
+                    <div class="col-sm-12 h3 make-center text-white">
+                        Hello World!!
+                    </div>
+            </div>
+            <!--<div class="cus-overlay"></div>-->
+            <div class="row">
+                <button onclick="likeCount(this);" type="button" class="btn col-sm-6  btn-primary">
+                    <i  class="fas fa-thumbs-up fa-2x"> 0</i>
+                </button>
+                <button onclick="dislikeCount(this);" type="button" class="btn col-sm-6  btn-secondary">
+                    <i  class="fas fa-thumbs-down fa-2x"> 0</i>	
+                </button>
+            </div>
+        </div>
+
+
+        <!-- REFERENCE BLOCK FOR IMAGE-->
+        <div id="refBlockImgId" class="mt-1" style="display:none">
+                <div class="row bg-info" style="height: 300px">
+                    <div class="col-sm-12 make-center text-white">
+                        <img src="./hacked.jpg" style="height: 300px;" class="img-fluid rounded" alt="Image not available">
+                    </div>
+                </div>
+                <div class="row">
+                    <button onclick="likeCount(this);" type="button" class="btn col-sm-6  btn-primary">
+                        <i  class="fa fa-thumbs-up"> 0</i>
+                    </button>
+                    <button onclick="dislikeCount(this);" type="button" class="btn col-sm-6  btn-secondary">
+                        <i  class="fa fa-thumbs-down "> 0</i>	
+                    </button>
+                </div>
+        </div>
+
+
+        <!-- REFERENCE BLOCK FOR VIDEO-->
+        <div id="refBlockVideoId" class="mt-1" style="display:none">
+                <div class="row bg-info" style="height: 300px">
+                    <div class="col-sm-12 make-center text-white">
+                        <video src="" style="height: 300px;" controls autoplay></video>
+                    </div>
+                </div>
+                <div class="row">
+                    <button onclick="likeCount(this);" type="button" class="btn col-sm-6  btn-primary">
+                        <i  class="fa fa-thumbs-up"> 0</i>
+                    </button>
+                    <button onclick="dislikeCount(this);" type="button" class="btn col-sm-6  btn-secondary">
+                        <i  class="fa fa-thumbs-down "> 0</i>	
+                    </button>
+                </div>
+        </div>
+
+    </body>
+</html>
