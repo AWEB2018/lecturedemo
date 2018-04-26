@@ -1,3 +1,9 @@
+## DAY PRENSENTATION ##
+    >> POST YOUR LOCATION :: MAP INTEGRATION.
+    >> THEME OPTION TO POST.
+    >> DELETE POST
+    >> POST AUDIO.
+
 ## DAY7 ##
     >> multiple
     >> accept
