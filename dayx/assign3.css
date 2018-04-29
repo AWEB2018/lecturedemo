@@ -1,0 +1,32 @@
+.make-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+  background-color: rgba(241, 31, 0, 0.3);
+  width: 100%;
+  margin-top: 1em;
+  position: static;
+  display: block;
+}
+
+thead {
+  display: table;
+  width: 100%;
+  background-color: rgba(241, 0, 241, 0.3);
+  position: sticky;
+  top: 0px;  /* trigger sticky when reaches coordonates */
+}
+
+tbody {
+  display: table;
+  width: 100%;
+}
+
+/*th {}
+
+tbody td:nth-child(2) {
+  height: 200px;
+}*/

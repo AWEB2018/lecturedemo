@@ -1,0 +1,15 @@
+.make-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tbody, thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  td {
+    border:1px solid;
+  }
+  
