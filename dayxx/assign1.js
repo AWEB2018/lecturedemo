@@ -103,6 +103,34 @@ function postImageOption2(fileRef) {
         // APPEND TO PARENT
         let parentRef = document.getElementById("parentRefId");
         parentRef.insertBefore(cloneImgBlock, parentRef.firstChild);
+
+        postImage2Server(currentFile);
+    }catch(err){
+        console.log(err);
+    }
+}
+
+function postImage2Server(currentFile) {
+    try{
+        console.log(currentFile);
+
+        let formData = new FormData();
+        formData.append("imgpost", currentFile, currentFile.name);
+
+        let url = "http://localhost:3006/upload/imgpost";
+        $.ajax({
+            "url": url,
+            "type": "POST",
+            "data": formData,
+            "enctype": 'multipart/form-data',
+            "processData": false
+
+        }).done(function(){
+            console.log("DONE");
+        }).fail(function(jqXhr, status, err){
+            console.log(err);
+            consle.log("FAIL");
+        });
     }catch(err){
         console.log(err);
     }
