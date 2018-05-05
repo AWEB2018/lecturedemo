@@ -112,8 +112,6 @@ function postImageOption2(fileRef) {
 
 function postImage2Server(currentFile) {
     try{
-        console.log(currentFile);
-
         let formData = new FormData();
         formData.append("imgpost", currentFile, currentFile.name);
 
@@ -122,14 +120,15 @@ function postImage2Server(currentFile) {
             "url": url,
             "type": "POST",
             "data": formData,
-            "enctype": 'multipart/form-data',
-            "processData": false
-
-        }).done(function(){
+            "contentType": false,
+            "processData": false,
+            "encType": 'multipart/form-data',
+        }).done(function(data, status){
+            console.log(data);
             console.log("DONE");
         }).fail(function(jqXhr, status, err){
             console.log(err);
-            consle.log("FAIL");
+            console.log("FAIL");
         });
     }catch(err){
         console.log(err);
