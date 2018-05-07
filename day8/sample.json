@@ -1,0 +1,29 @@
+{
+    "ID" : 1, 
+    "NAME" : "CDAC",
+    "COURSE_FEE" : 95000.00,
+
+    "ADMIN" : {
+        "NAME" : "REKHA MAM"
+    },
+
+    "STAFF" : {
+        "TECH" : {
+            "NAME" : "CHANDRASHEKHAR SIR"
+        }
+    },
+
+    "COURSE_LIST" : ["DAC", "DMC"],
+
+    "COURSE_OBJ_LIST" : [
+        {
+            "COURSE_NAME" : "DAC",
+            "FEE" : 100
+        },
+
+        {
+            "COURSE_NAME" : "DMC",
+            "FEE" : 200
+        }
+    ]
+}

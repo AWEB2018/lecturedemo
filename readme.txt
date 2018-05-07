@@ -1,3 +1,24 @@
+## DAY 8
+    >> ASSIGNMENT1 :: AJAX REQUEST :: NORMAL OBJECt
+    >> ASSIGNMENT1 :: AJAX REQUEST :: ARRAY
+    >> ASSIGNMENT1 :: AJAX REQUEST :: LOADER
+    >> ASSIGNMENT1 :: JSON 
+
+    >> https://jsonplaceholder.typicode.com/
+    >> readyState 
+        1 => request open 
+        2 => connection established to server.
+        3 => process
+        4 => request complete, response is available from server :: *****
+    >> Working with json
+        >> string,
+        >> number,
+        >> boolean
+        >> object,
+        >> array
+    >> JSON.stringify()
+    >> JSON.parse()
+
 ## DAY PRENSENTATION ##
     >> POST YOUR LOCATION :: MAP INTEGRATION.
     >> THEME OPTION TO POST.
