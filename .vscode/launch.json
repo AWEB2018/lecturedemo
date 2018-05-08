@@ -24,5 +24,12 @@
             "name": "THIRD Program",
             "program": "${workspaceFolder}/day9/third.js"
         },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Fourth Program",
+            "program": "${workspaceFolder}/day9/fourth.js"
+        },
     ]
 }

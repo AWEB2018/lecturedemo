@@ -30,6 +30,23 @@ function helloAjax(){
     }
 }
 
+function helloAjaxUsingJQuery(){
+    try{
+        let url = "https://jsonplaceholder.typicode.com/posts";
+        
+        let jqhr = $.get(url);
+        jqhr.done(function(data){
+            for(let i=0; i<data.length; i++){
+                let item = data[i];
+                updateWebPage(item);
+            }
+        });
+
+    }catch(err){
+        console.log(err);
+    }
+}
+
 
 function updateWebPage(resJson){
     try{

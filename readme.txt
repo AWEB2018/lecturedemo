@@ -10,7 +10,7 @@
     >> Create Custom Class In JS. ES5 **
     >> Add Data Member and Member function in class.
 
-    
+    >> ajax calling using jQery.
 
 ## DAY 8
     >> ASSIGNMENT1 :: AJAX REQUEST :: NORMAL OBJECt
