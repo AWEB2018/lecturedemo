@@ -1,3 +1,17 @@
+## DAY9
+    >> Execute JS from console.
+        >> node folder/proram.js
+    >> Debug your program in VSCODE.
+    
+    >> Create function and excutte function in vscode;
+    >> Create function and assign to variable; then execute;
+    >> declare string variable; and try to call as function;
+
+    >> Create Custom Class In JS. ES5 **
+    >> Add Data Member and Member function in class.
+
+    
+
 ## DAY 8
     >> ASSIGNMENT1 :: AJAX REQUEST :: NORMAL OBJECt
     >> ASSIGNMENT1 :: AJAX REQUEST :: ARRAY
