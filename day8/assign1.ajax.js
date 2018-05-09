@@ -3,7 +3,7 @@ function helloAjax(){
         // STEP-1
         let http = new XMLHttpRequest();
 
-        // STEP-4 EVENT HANDLER :: run()
+        // STEP-4 EVENT HANDLER :: run() :: callback
         http.onreadystatechange = function(){
             if(http.readyState == 4){
                 let resString = http.responseText;
@@ -21,7 +21,7 @@ function helloAjax(){
 
         // STEP-2
         let url = "https://jsonplaceholder.typicode.com/posts";
-        http.open("GET", url, true);
+        http.open("GET", url);
 
         // STEP-3
         http.send();
@@ -35,6 +35,7 @@ function helloAjaxUsingJQuery(){
         let url = "https://jsonplaceholder.typicode.com/posts";
         
         let jqhr = $.get(url);
+        
         jqhr.done(function(data){
             for(let i=0; i<data.length; i++){
                 let item = data[i];
