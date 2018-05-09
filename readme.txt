@@ -1,3 +1,9 @@
+## DAY 10
+    >> ASSIGNMENT SEARCH :: USING NORMAL AJAX
+    >> ASSIGNMENT SEARCH :: USING jQuery
+
+    >> https://openweathermap.org/api
+
 ## DAY9
     >> Execute JS from console.
         >> node folder/proram.js
