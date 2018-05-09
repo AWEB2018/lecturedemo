@@ -2,6 +2,8 @@
     >> ASSIGNMENT SEARCH :: USING NORMAL AJAX
     >> ASSIGNMENT SEARCH :: USING jQuery
 
+    >> Assignment :: Weather API AJAX
+    >> Assignment :: Weather API jQuery
     >> https://openweathermap.org/api
 
 ## DAY9
