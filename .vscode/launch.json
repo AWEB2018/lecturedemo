@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Day 11 ASSIGN1",
+            "program": "${workspaceFolder}/day11/assign1.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Second Program",
             "program": "${workspaceFolder}/day9/second.js"
         },
