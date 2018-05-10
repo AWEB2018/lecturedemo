@@ -4,6 +4,8 @@
     >> Assignment on Postion; With image background; bottom-left; bottom-right
         and some text in center.
         Make interactive. by changing background
+    >> Weather API with icons.
+    >> Fix the order issue in weather application.
 
 ## DAY 10
     >> ASSIGNMENT SEARCH :: USING NORMAL AJAX

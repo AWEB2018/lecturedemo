@@ -53,8 +53,8 @@ function paintPage(data){
             clone.children[0].children[4].innerHTML=items.weather[0].description;
         
             let parent=document.getElementById("parent");
-          //  parent.insertBefore(clone,parent.firstChild);
-            parent.appendChild(clone);
+            parent.insertBefore(clone,parent.firstChild);
+            //parent.appendChild(clone);
         }
     
     }catch(err)
