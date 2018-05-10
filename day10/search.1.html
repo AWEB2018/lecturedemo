@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="search.css">
+        <script src="search.js"></script>
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center" id="home" style="height:80%;">
+                <div class="col-sm-3"></div>
+                
+                <div class="col-sm-6 ">
+                    
+                    <div class="row text-dark h3">
+                        <div class="col-sm-12" style="display: flex; justify-content: center;align-items: center;">
+                            DAC SEARCH
+                        </div>
+                    </div>
+
+                    <div class="row" >
+                        <div class="col-sm-12">
+                            <input class="form-control form-control-lg" type="text" placeholder="Search Here...">
+                        </div>
+                    </div>
+
+                    <div class="row mt-1" >
+                        <div class="col">
+                            <button type="button" class="col-sm-12 btn btn-primary btn-sm" onclick="ajaxSearch()">SEARCH</button>
+                        </div>
+                        <div class="col">
+                            <button  type="button" class="col-sm-12 btn btn-secondary btn-sm" onclick="">LUCKY</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+
+            <!--search output-->
+            <div class="row" id="searchOutput" style="display: none;">
+                <div class="col-sm-2">
+                    <button  type="button" class="col-sm-6 btn btn-primary btn-sm" onclick="home()">HOME</button>
+                </div>
+                <div class="col-sm-8" id="parent">
+                    
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+        </div>
+        <div id="refBlock" class="mt-2" style="display: none; border-bottom: 1px solid #ece8e8">
+                <div class="row h5 text-primary">
+                    Javascript Framework, Ajax, jquery 
+                </div>
+                <div class="row text-success">
+                        https://www.w3schools.com/xml/ajax_intro.asp
+                </div>
+                <div class="row">Asynchronous JavaScript And XML.
+                     AJAX is not a programming language. 
+                     AJAX just uses a combination of: A browser built-in XMLHttpRequest 
+                     object (to request data from a web server) JavaScript and HTML DOM
+                      (to display or use the data)
+                </div>
+        </div>
+    </body>
+</html>
