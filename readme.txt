@@ -1,6 +1,9 @@
 ## DAY-11
     >> ON LOAD MAKE DEFAULT REQUEST :: ON READY
     >> HANDLE INVALID INPUT
+    >> Assignment on Postion; With image background; bottom-left; bottom-right
+        and some text in center.
+        Make interactive. by changing background
 
 ## DAY 10
     >> ASSIGNMENT SEARCH :: USING NORMAL AJAX

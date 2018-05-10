@@ -39,11 +39,22 @@ function paintPage(data){
             clone.removeAttribute("id");
             clone.style.display="block";
 
-            clone.children[0].children[0].innerHTML=items.main.temp_max;
+            let dref=new Date(items.dt*1000);
+            let sdate=dref.getDate()+"-"+dref.getMonth()+"-"+dref.getFullYear()+" "+dref.getHours()+":"+dref.getMinutes();
 
+            clone.children[0].children[0].innerHTML=$("#inputId").val();
+            clone.children[0].children[1].innerHTML=sdate;
+
+            let min = "Min  "+items.main.temp_min + "<sup>o</sup> c"
+            let max = "Max  "+items.main.temp_max + "<sup>o</sup> c"
+
+            clone.children[0].children[2].innerHTML=min;
+            clone.children[0].children[3].innerHTML=max;
+            clone.children[0].children[4].innerHTML=items.weather[0].description;
+        
             let parent=document.getElementById("parent");
-            parent.insertBefore(clone,parent.firstChild);
-
+          //  parent.insertBefore(clone,parent.firstChild);
+            parent.appendChild(clone);
         }
     
     }catch(err)
@@ -56,5 +67,5 @@ function paintPage(data){
 // DEFAULT CALL
 // ajaxSearch(); // PROBLEM :: DOCUMENT IS NOT READY
 $(document).ready(function(){
-   // ajaxSearch();
+    ajaxSearch();
 });
