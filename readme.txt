@@ -1,3 +1,7 @@
+## DAY 12
+    >> Weather API using AJAX and XML.
+    
+
 ## DAY-11
     >> ON LOAD MAKE DEFAULT REQUEST :: ON READY
     >> HANDLE INVALID INPUT
