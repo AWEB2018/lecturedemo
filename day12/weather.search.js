@@ -99,3 +99,20 @@ function ajaxSearchXMLResponse() {
         console.log(err);
     }
 }
+
+
+function readAllEmployee(){
+    try{
+        let url = "http://localhost:4000/emp";
+        let xhr = $.get(url);
+        xhr.done(function(data){
+            console.log(data);
+        });
+
+        xhr.fail((p1, p2, p3)=>{
+            console.log(p3);
+        });
+    }catch(err){
+        console.log(err);
+    }
+}
