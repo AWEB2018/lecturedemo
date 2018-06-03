@@ -1,0 +1,10 @@
+.make-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parentRefId  div:nth-child(even){
+    background-color: #abc;
+}
+
