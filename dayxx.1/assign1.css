@@ -4,7 +4,17 @@
     align-items: center;
 }
 
-#parentRefId  div:nth-child(even){
-    background-color: #abc;
+#parentRefId >  div:nth-child(even){
+    background-color: #eee;
 }
+
+#parentRefId >  div:nth-child(odd){
+    background-color: #ddd;
+}
+
+#parentRefId >  div:first-child{
+    background-color: tomato;
+    color:white !important;
+}
+
 
