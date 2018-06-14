@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+            .wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 2px;
+                grid-auto-rows: minmax(200px, auto);
+            }
+
+            .wrapper > div {
+                background: #abc;
+                border-radius: 5px;
+            }
+
+            .wrapper > div:nth-child(odd){
+                background: #cad;
+            }
+            
+            .nested-grid{
+                display: grid;
+            }
+
+            .nested-grid > div{
+                padding: 1em;
+                font-size: 1.4em;
+                align-self: center;
+                justify-self: center;
+                color:#ffffffbb;
+                text-align: justify !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="nested-grid">
+                <div>
+                   Lorem, ipsum. Lorem, ipsum dolor. Lorem ipsum dolor sit. Lorem, ipsum.
+                </div>
+            </div>
+            
+            <div class="nested-grid">
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident incidunt nesciunt repellendus nostrum qui? Debitis repellat quaerat aperiam pariatur dolorum.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Iusto cupiditate est impedit hic in optio, sint sunt illo repellat quidem enim excepturi? Aliquid neque cumque dignissimos doloremque cupiditate.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Sapiente, autem deleniti quas ullam, voluptates eum possimus harum rerum officia nostrum, assumenda ab aut voluptate perspiciatis itaque veritatis dignissimos!</div>
+            </div>
+            <div class="nested-grid">
+                <div>Enim est quam illo commodi dolores? Fugiat voluptatem ipsa, ducimus sit magni voluptate eveniet alias quas nobis, pariatur repellendus velit!</div>
+            </div>
+
+
+            <div class="nested-grid">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, libero?</div>
+            </div>
+            <div class="nested-grid">
+                <div>Debitis ullam repellendus neque voluptatem fuga esse inventore, quod magnam.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Libero quis ea vitae consequatur distinctio itaque nobis nesciunt repellendus.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Vel consequuntur accusamus, quas est quisquam debitis sed sequi dicta!</div>
+            </div>
+            <div class="nested-grid">
+                <div>Molestias animi laudantium corporis, quasi maxime quibusdam et. Eligendi, necessitatibus?</div>
+            </div>
+            <div class="nested-grid">
+                <div>Eos nihil enim eum inventore ab? Aut cumque provident quasi.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Mollitia optio sunt expedita odio ullam reprehenderit neque dolor quibusdam.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Quidem vero, voluptates saepe officia quae qui consequuntur ullam commodi.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Qui est assumenda eius dicta ad commodi possimus nihil non.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Eos illo molestias sit quisquam, labore cupiditate deleniti laborum sequi.</div>
+            </div>
+        </div>
+    </body>
+</html>
