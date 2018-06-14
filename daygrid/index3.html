@@ -19,13 +19,20 @@
 
             .nested{
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
                 grid-gap : 2px;
+                grid-auto-rows: minmax(50px, auto)
             }
 
             .nested > div{
-                padding: 1em;
+                padding: 2px;
                 background : #acc;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: large;
+                color: white;
             }
 
             .nested > div:nth-child(odd){
@@ -41,13 +48,15 @@
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ratione!</div>
             
             <div class="nested">
-                <div>Lorem ipsum dolor sit.</div>
-                <div>Quasi ducimus adipisci culpa.</div>
-                <div>Voluptatem eius autem ullam.</div>
-                <div>Ex dignissimos quis minus.</div>
-                <div>Laborum blanditiis accusantium eum!</div>
-                <div>Quasi incidunt eos voluptas!</div>
-                <div>Qui nesciunt ut quas!</div>
+                <div>Lorem, ipsum.</div>
+                <div>Esse, ad.</div>
+                <div>Fuga, quidem?</div>
+                <div>Aliquid, quas?</div>
+                <div>Provident, dolorum.</div>
+                <div>Fugiat, ut?</div>
+                <div>Corrupti, ex.</div>
+                <div>Ab, placeat!</div>
+                <div>Labore, quaerat.</div>
             </div>
 
             <div>Ipsum at quibusdam ipsa neque accusantium deleniti totam, quis rem?</div>
