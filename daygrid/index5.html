@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            .wrapper{
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-gap:2px;
+            }
+
+            .wrapper > div{
+                padding: 1em;
+                background: goldenrod;
+                color:white;
+                font-size: 1.2em;
+            }
+
+            .wrapper > div:nth-child(odd){
+                background: dodgerblue;
+            }
+
+            .nested-grid{
+                display: grid;
+            }
+
+            .nested-grid > div{
+                align-self: center;
+                justify-self: center;
+                text-align: justify;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="nested-grid">
+                <div>Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Autem quam ipsa accusamus ratione!</div>
+            </div>
+            <div class="nested-grid">
+                <div>Non voluptate voluptates aperiam deleniti.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Enim aliquam voluptatem est possimus.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Labore in consectetur placeat deserunt.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Accusamus maxime quam nostrum consequuntur.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Sit obcaecati eveniet minima earum?</div>
+            </div>
+            <div class="nested-grid">
+                <div>Magnam vero delectus tenetur architecto.</div>
+            </div>
+            <div class="nested-grid">
+                <div>Ex maxime officiis earum incidunt!</div>
+            </div>
+            <div class="nested-grid">
+                <div>Nulla labore ducimus porro culpa!</div>
+            </div>
+
+        </div>
+    </body>
+</html>
